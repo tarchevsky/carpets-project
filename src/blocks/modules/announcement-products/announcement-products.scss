@@ -1,0 +1,14 @@
+.announcement-products {
+	display: block;
+
+	&-item {
+		&__img {
+			img {
+				height: 400px;
+			}
+		}
+		&__descr {
+			text-align: center;
+		}
+	}
+}

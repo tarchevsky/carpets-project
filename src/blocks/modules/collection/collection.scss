@@ -1,0 +1,20 @@
+.collection {
+	margin-block: 50px;
+	font-family: 'Antic Didone', serif;
+	text-align: center;
+
+	p {
+		margin-block: 10px;
+	}
+
+	&__img {
+		height: 400px;
+		/* img {
+			height: 800px;
+		} */
+	}
+
+	&__material {
+		font-size: 1.25rem;
+	}
+}

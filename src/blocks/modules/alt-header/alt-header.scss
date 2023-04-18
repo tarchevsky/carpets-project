@@ -1,0 +1,44 @@
+.alt-header {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	align-items: center;
+	position: relative;
+	background: transparent;
+	color: var(--black);
+	font-size: 1.5rem;
+
+	&-menu {
+		justify-self: end;
+		width: 100%;
+		padding: 0 50px;
+
+		&__list {
+			@include gap;
+
+			display: flex;
+			justify-content: space-between;
+			padding-inline-start: 0;
+			margin-block: 0;
+		}
+
+		&__item {
+			display: flex;
+			align-items: center;
+
+			&::before {
+				display: none;
+			}
+
+			a {
+				display: block;
+				padding: 10px;
+				border-color: transparent;
+				transition: all $transition;
+
+				&:hover {
+					border-color: $accent-color;
+				}
+			}
+		}
+	}
+}
