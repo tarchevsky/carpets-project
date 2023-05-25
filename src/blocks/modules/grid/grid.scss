@@ -2,7 +2,7 @@
 	margin-block-start: 50px;
 
 	&__row {
-		grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+		grid-template-columns: 1fr 1fr;
 		gap: 0;
 	}
 
@@ -35,7 +35,7 @@
 	}
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1024px) {
 	.grid {
 		&__row {
 			display: flex;
