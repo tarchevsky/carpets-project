@@ -4,6 +4,39 @@
 	&__row {
 		grid-template-columns: 1fr 1fr;
 		gap: 0;
+
+		&:nth-of-type(1) {
+			.grid-img {
+				background: url('../img/material.jpg') center center/cover no-repeat;
+			}
+		}
+		&:nth-of-type(2) {
+			.grid-img {
+				background: url('../img/stamina.jpg') center center/cover no-repeat;
+			}
+		}
+		&:nth-of-type(3) {
+			.grid-img {
+				background: url('../img/thermal-insulation.jpeg') center center/cover
+					no-repeat;
+			}
+		}
+		&:nth-of-type(4) {
+			.grid-img {
+				background: url('../img/hypoallergenic.jpg') center center/cover
+					no-repeat;
+			}
+		}
+		&:nth-of-type(5) {
+			.grid-img {
+				background: url('../img/legacy.jpeg') center center/cover no-repeat;
+			}
+		}
+		&:nth-of-type(6) {
+			.grid-img {
+				background: url('../img/repair.jpeg') center center/cover no-repeat;
+			}
+		}
 	}
 
 	&-text {
@@ -23,15 +56,6 @@
 
 	&-img {
 		min-height: 400px;
-		&:nth-of-type(1) {
-			background: url('../img/grid-1.png') center center/cover no-repeat;
-		}
-		&:nth-of-type(2) {
-			background: url('../img/grid-2.png') center center/cover no-repeat;
-		}
-		&:nth-of-type(2) {
-			background: url('../img/grid-3.png') center center/cover no-repeat;
-		}
 	}
 }
 
