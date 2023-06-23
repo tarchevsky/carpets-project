@@ -39,11 +39,56 @@
 		}
 
 		&__btn {
-			align-self: flex-end;
-			margin: 0;
-			margin-block-start: 150px;
-			background: var(--ruby);
+			display: block;
+			min-width: 200px;
+
+			padding: 7px 60px;
+			margin: 150px auto 0;
+
+			border: 1px solid #333;
+			border-radius: $brr;
+
+			cursor: pointer;
+			color: $base-color;
+			font-size: clamp(1rem, 5.3vw - 1.3rem, 2rem);
+			font-weight: inherit;
+
 			color: var(--white);
+			background: var(--ruby);
+			appearance: none;
+			transition: all 0.3s ease-out;
+
+			&:hover {
+				color: $base-color;
+				background-color: $hover-color;
+				border-color: $accent-color;
+			}
+
+			&:active {
+				background-color: $active-color;
+				border-color: transparent;
+			}
+
+			&:focus {
+				box-shadow: 0 0 0 3px rgb(0 170 252 / 52%);
+				outline: none;
+
+				&:hover {
+					background-color: $active-color;
+					color: #fff;
+					border-color: transparent;
+				}
+			}
+
+			&.active {
+				border-color: transparent;
+				background-color: $active-color;
+				color: #fff;
+
+				&:hover {
+					background-color: #0c9ade;
+				}
+			}
 		}
 	}
 }
@@ -61,6 +106,16 @@
 
 			&-2 {
 				display: none;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.main {
+		&-meaning {
+			&__btn {
+				min-width: 100%;
 			}
 		}
 	}
